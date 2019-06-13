@@ -1,0 +1,74 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.xyj.core.util.FileProperties",
+      "name": "avatar",
+      "type": "com.xyj.core.util.FileProperties"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig",
+      "type": "com.xyj.conf.FtpAttConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-cloud-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-default-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-mobile-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "defaultValue": false,
+      "name": "pathconfig.ftp-open",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-operative-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-pass-word",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "defaultValue": 0,
+      "name": "pathconfig.ftp-port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-portal-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-property-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xyj.conf.FtpAttConfig",
+      "name": "pathconfig.ftp-user-name",
+      "type": "java.lang.String"
+    }
+  ]
+}
