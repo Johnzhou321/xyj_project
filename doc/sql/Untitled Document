@@ -1,0 +1,11 @@
+echo "Stopping search-0.0.1-SHAPSHOT.jar"
+source /etc/profile
+pid=`ps -ef | grep search-0.0.1-SHAPSHOT.jar | grep -v grep | awk '{print $2}'`
+if [ -n "$pid" ]
+then
+   echo "kill -9 的pid:" $pid
+   kill -9 $pid
+fi
+echo "stop finish"
+nohup java -jar /home/project/springboot-solr/search-0.0.1-SHAPSHOT.jar >/dev/null 2>&1 &
+echo "start run"

@@ -75,7 +75,7 @@
                             <label class="col-sm-2 control-label"><font color="red">*</font>产品图片</label>
                             <div id = "imgDiv">
                                 <input type="button" name="addImg" value="添加图片" onclick="addImage()">
-                                <input id="upload_file" type="file" name="files" multiple data-preview-file-type="any">
+                                <input id="upload_file" type="file" name="files" value="选择图片" multiple data-preview-file-type="any" accept="image/x-png,image/jpeg,image/bmp">
                             </div>
 
                         </div>
@@ -100,7 +100,7 @@
 <script type="text/javascript">
     //添加图片
     function addImage() {
-        var appendhtml = "<input style='margin-left: 123.5px;' type=\"file\" name=\"files\" multiple data-preview-file-type=\"any\">";
+        var appendhtml = "<input style='margin-left: 123.5px;' type=\"file\" name=\"files\" multiple data-preview-file-type=\"any\" accept=\"image/x-png,image/jpeg,image/bmp\">";
         // $("#imgDiv").find("input[name='addImg']").before(appendhtml);
         $("#imgDiv").append(appendhtml);
     }
