@@ -24,8 +24,10 @@ import java.io.OutputStream;
 import java.util.List;
 
 /**
- * @author qjp
- * @since 2015-12-19 11:10
+ * 产品管理
+ * @author zhouguangming
+ * @date 6/14/19
+ * @since
  */
 @Api(value ="产品管理模块", description = "产品管理Api",tags = {"产品管理操作接口"})
 @RestController
