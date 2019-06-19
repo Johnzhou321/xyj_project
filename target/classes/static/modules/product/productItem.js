@@ -198,7 +198,8 @@ function addForm(id,type) {
                                 if (i == "fileIds"){
                                     var appendHtml = "";
                                     for (j in result[i]){
-                                        appendHtml += "<img class='fileImg' src='/productItem/getFileById/" + result[i][j]+"'/>";
+                                        //appendHtml += "<img class='fileImg' src='/productItem/getFileById/" + result[i][j]+"'/>";
+                                        appendHtml += "<img class='fileImg' src='" + result[i][j] + "'/>";
                                     }
                                     $form.find("#imgDiv").html("").append(appendHtml);
                                 }

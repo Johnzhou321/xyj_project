@@ -1,6 +1,8 @@
 package com.xyj.modules.product.service.impl;
 
-import com.mongodb.gridfs.GridFSInputFile;
+import com.xyj.base.DefaultFileOperate;
+import com.xyj.base.FastDFSClient;
+import com.xyj.base.FileSystemUtil;
 import com.xyj.base.GridfsService;
 import com.xyj.modules.product.mapper.ProductImageRelationMapper;
 import com.xyj.modules.product.mapper.ProductItemMapper;
@@ -31,6 +33,8 @@ public class ProductItemServiceImpl implements ProductItemService {
     private ProductImageRelationMapper productImageRelationMapper;
     @Autowired
     private ProductImageRelationService productImageRelationService;
+    @Autowired
+    private DefaultFileOperate defaultFileOperate;
 
     @Override
     public List<ProductItemVo> getAll(ProductItem productItem, String keyword) {
@@ -72,17 +76,20 @@ public class ProductItemServiceImpl implements ProductItemService {
             System.out.println("id = " + productItem.getId());
             MultipartFile[] files = productItemVo.getFiles();
             if (files != null && files.length > 0){
-                GridFSInputFile gridFile = null;
                 ProductImageRelation relation = null;
+                String filePath = null;
                 for (MultipartFile file : files){
                     if (file.getSize() <= 0){
                         continue;
                     }
-                    gridFile = gridfsService.save(file);
+                    //gridFile = gridfsService.save(file);
+                    //filePath = FileSystemUtil.save(file);
+                    //filePath = FastDFSClient.save(file);
+                    filePath = defaultFileOperate.save(file);
                     relation = new ProductImageRelation();
                     relation.setCreateTime(new Date());
-                    relation.setFileId(String.valueOf(gridFile.getId()));
-                    relation.setFileName(gridFile.getFilename());
+                    relation.setFileId(filePath);
+                    //relation.setFileName(gridFile.getFilename());
                     relation.setProductId(productItem.getId());
                     //relation.setStatus((byte)0);
                     productImageRelationMapper.insert(relation);
