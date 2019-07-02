@@ -14,6 +14,7 @@ import com.xyj.modules.product.vo.ProductItemVo;
 import com.xyj.utils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Date;
@@ -63,6 +64,7 @@ public class ProductItemServiceImpl implements ProductItemService {
         return productItemMapper.selectByPrimaryKey(id);
     }
 
+    @Transactional
     @Override
     public void saveOrUpdate(ProductItemVo productItemVo){
         ProductItem productItem = new ProductItem();
