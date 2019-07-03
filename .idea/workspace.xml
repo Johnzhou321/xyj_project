@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b504a72f-9c83-4ec9-b5a2-ed7aec5d4358" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/DirectBankPayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/BaseVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/UnifiedOrderResultVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/UnifiedOrderVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/enums/CommonStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/entity/PayOrderToday.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/PayParamsVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyj/utils/IdGenUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D:/springboot/demo/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/D:/springboot/demo/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot0601.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot0601.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyj/modules/product/service/impl/ProductItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/product/service/impl/ProductItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyj/modules/product/service/impl/ProductItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xyj/modules/product/service/impl/ProductItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/DirectBankPayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/DirectBankPayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyj/modules/pay/order/PayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xyj/modules/pay/order/PayService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,33 +29,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/product/service/impl/ProductItemServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/conf/RedisCacheConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/FastDFSClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/AbstractFileOperate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -68,25 +38,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/DefaultFileOperate.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/enums/CommonStatusEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="19">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -94,35 +49,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/DirectBankPayService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="305">
+              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/UnifiedOrderResultVo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding>
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/FileOperate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3051#3052#0" expanded="true" />
+                <element signature="e#3078#3079#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,9 +102,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/product/service/impl/ProductItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/UnifiedOrderResultVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/BaseVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/UnifiedOrderVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyj/utils/IdGenUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyj/enums/CommonStatusEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/entity/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/PayParamsVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/entity/PayOrderToday.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/DirectBankPayService.java" />
       </list>
     </option>
@@ -194,12 +131,16 @@
     <option name="width" value="1398" />
     <option name="height" value="1041" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,39 +226,12 @@
               <item name="xyj" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="pay" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="PayService" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="springboot0601" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyj_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xyj" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="pay" type="462c0819:PsiDirectoryNode" />
               <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0601" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyj_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xyj" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="pay" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-              <item name="UnifiedOrderVo" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,16 +253,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/conf" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/modules/product" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xyj.modules.pay.vo" />
+      <recent name="com.xyj.enums" />
+      <recent name="com.xyj.utils" />
+      <recent name="com.xyj.modules.pay.entity" />
       <recent name="com.xyj.base" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/config" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/conf" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/modules/product" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -408,11 +325,12 @@
       <workItem from="1560905970461" duration="14571000" />
       <workItem from="1560992894193" duration="1912000" />
       <workItem from="1562057058770" duration="2513000" />
+      <workItem from="1562115770866" duration="1364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48059000" />
+    <option name="totallyTimeSpent" value="49423000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,7 +345,7 @@
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19237147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19458264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -443,7 +361,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32925585" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31396535" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30682978" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32925585" />
@@ -454,7 +372,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2498618" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.15975676" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.15975676" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -479,42 +397,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/weather/config/RestConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/juhe/news/service/NewsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/job/quartz/factory/JobFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/modules/fileUpload/oldfile.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="65" lean-forward="true" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/modules/fileUpload/list.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/cronTask/utils/CronTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -750,67 +632,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/product/service/impl/ProductItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/conf/RedisCacheConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/FileOperate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/FastDFSClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/AbstractFileOperate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/DefaultFileOperate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/BaseVo.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/UnifiedOrderResultVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -829,22 +652,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/product/service/impl/ProductItemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="1121">
+          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/conf/RedisCacheConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/FastDFSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/UnifiedOrderResultVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/FileOperate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/DirectBankPayService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/utils/IdGenUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/entity/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/vo/PayParamsVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/entity/PayOrderToday.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/PayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/enums/CommonStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/DefaultFileOperate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/base/AbstractFileOperate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyj/modules/pay/order/DirectBankPayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3051#3052#0" expanded="true" />
+            <element signature="e#3078#3079#0" expanded="true" />
           </folding>
         </state>
       </provider>

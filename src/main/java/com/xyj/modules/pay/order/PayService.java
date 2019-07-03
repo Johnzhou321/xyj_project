@@ -1,5 +1,7 @@
 package com.xyj.modules.pay.order;
 
+import com.xyj.modules.pay.entity.PayOrderToday;
+import com.xyj.modules.pay.vo.PayParamsVo;
 import com.xyj.modules.pay.vo.UnifiedOrderResultVo;
 import com.xyj.modules.pay.vo.UnifiedOrderVo;
 
@@ -10,5 +12,10 @@ import com.xyj.modules.pay.vo.UnifiedOrderVo;
  * @since
  */
 public interface PayService {
+
     public UnifiedOrderResultVo unifiedOrder(UnifiedOrderVo unifiedOrderVo) throws Exception;
+
+    PayOrderToday initOrder(UnifiedOrderVo unifiedOrderVo, PayParamsVo payParamsVo) throws Exception;
+
+    public PayParamsVo getPayParamsVo(String merchantId, String payWayCode);
 }
