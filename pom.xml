@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>springboot0601</artifactId>
+	<artifactId>xyj_project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -295,6 +295,12 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.2.2</version>
 		</dependency>
+		<!-- 引入swagger-bootstrap-ui包 -->
+		<dependency>
+			<groupId>com.github.xiaoymin</groupId>
+			<artifactId>swagger-bootstrap-ui</artifactId>
+			<version>1.8.5</version>
+		</dependency>
 
 		<!--actuator-->
 		<dependency>
@@ -313,6 +319,12 @@
             <artifactId>lombok</artifactId>
             <version>1.16.12</version>
         </dependency>
+
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
 
     </dependencies>
 

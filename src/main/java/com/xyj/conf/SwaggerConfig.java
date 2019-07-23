@@ -1,7 +1,10 @@
 package com.xyj.conf;
 
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -23,26 +26,43 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 
 @Configuration
+@EnableSwagger2
+@EnableSwaggerBootstrapUI
+public class SwaggerConfig extends WebMvcConfigurerAdapter {
 
-public class SwaggerConfig {
-@Bean
-public Docket createRestApi() {
+    @Bean
+    public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
+                .groupName("product")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.xyj.modules.sys.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.xyj.modules"))
                 .paths(PathSelectors.any())
                 .build();
-}
-
-
-private ApiInfo apiInfo() {
-    return new ApiInfoBuilder()
-            .title("新后台管理系统")
-            .description("RESTful APIs")
-            .termsOfServiceUrl("https://gitee.com/qinjianping")
-            .version("1.0")
-            .build();
     }
+
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder()
+                .title("校园家接口文档")
+                .description("校园家接口文档")
+                .termsOfServiceUrl("http://localhost:8083/")
+                .contact("zhouguangming@foxmail.com")
+                .version("1.0")
+                .build();
+    }
+
+    //添加ResourceHandler
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("doc.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+        super.addResourceHandlers(registry);
+    }
+
 }
 

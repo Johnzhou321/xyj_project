@@ -63,7 +63,9 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 		notLoginPaths.add("/toError");
 		notLoginPaths.add("/showRegister");
 		notLoginPaths.add("/sys/login/logout");
-		notLoginPaths.add("/swagger-ui.html");
+		notLoginPaths.add("/v2/api-docs");
+		notLoginPaths.add("/swagger-resources");
+		notLoginPaths.add("/doc.html");
 		notLoginPaths.add("/error");
 		notLoginPaths.add("/main");
 		if(notLoginPaths.contains(path)) return false;

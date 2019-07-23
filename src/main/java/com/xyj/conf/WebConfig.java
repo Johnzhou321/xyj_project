@@ -20,8 +20,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	/**
 	 * 不需要登录拦截的url:登录注册和验证码
 	 */
-	final String[] notLoginInterceptPaths = {"/toLogin","/showRegister","/toError","/","/sys/login/signIn","/sys/login/logout","/swagger-ui.html"};
- 
+	final String[] notLoginInterceptPaths = {"/toLogin","/showRegister","/toError","/","/sys/login/signIn","/sys/login/logout","/swagger-resources", "/v2/api-docs", "/doc.html"};
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		// 日志拦截器
